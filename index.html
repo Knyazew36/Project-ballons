@@ -16,6 +16,23 @@
 
 <body>
     <div class="container">
+        <div class="navigation">
+            <input type="checkbox" class="navigation__toggle" id="navi-toggle">
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon"></span>
+            </label>
+            <div class="navigation__background"> </div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link">О НАС</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">СКИДКИ</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">ЛУЧШИЕ ТУРЫ</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">КАЛЬКУЛЯТОР ЦЕНЫ</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">СВЯЗАТЬСЯ С НАМИ</a></li>
+                </ul>
+            </nav>
+
+        </div>
         <header class="header">
             <img src="./images/logo.svg" alt="Логотип воздушный шар" class="header__logo">
             <div class="header__box">
@@ -31,8 +48,6 @@
                 <div class="text-align-center margin-bottom-80px">
                     <h2 class="title-secondary">НЕВЕРОЯТНОЕ ОЩУЩЕНИЕ СВОБОДЫ</h2>
                 </div>
-
-
                 <div class="row">
                     <div class="col-1-of-2">
                         <h3 class="title-third margin-bottom-10px">
@@ -64,7 +79,6 @@
                     </div>
                 </div>
             </section>
-
             <section class="section-adventure">
                 <div class="row">
                     <div class="col-1-of-4">
@@ -105,7 +119,6 @@
                     </div>
                 </div>
             </section>
-
             <section class="section-tour">
                 <div class="text-align-center margin-bottom-80px">
                     <h2 class="title-secondary ">Наиболее популярные туры</h2>
@@ -115,7 +128,6 @@
                         <div class="card-tour">
                             <div class="card-tour__side card-tour__side_front">
                                 <div class="card-tour__img card-tour__img_1 margin-bottom-50px">
-
                                 </div>
                                 <h4 class="card-tour__title">
                                     <span class="card-tour__span card-tour__span_1">групповые</span> <br>
@@ -144,7 +156,6 @@
                         <div class="card-tour">
                             <div class="card-tour__side card-tour__side_front">
                                 <div class="card-tour__img card-tour__img_2 margin-bottom-50px">
-
                                 </div>
                                 <h4 class="card-tour__title">
                                     <span class="card-tour__span card-tour__span_1">частные</span> <br>
@@ -256,7 +267,67 @@
                 </div>
                 <div class="text-align-center"> <a href="#" class="btn btn_animated ">Забронировать</a></div>
             </section>
+            <section class="section-book">
+                <div class="row">
+                    <div class="book">
+                        <div class="book__form">
+                            <form action="#" class="form">
+                                <div class="text-align-center margin-bottom-30px">
+                                    <h2 class="title-secondary">
+                                        ЗАБРОНИРОВАТЬ ТУР
+                                    </h2>
+                                </div>
+                                <div class="form__group">
+                                    <input type="text" class="form__input" placeholder="Имя Фамилия" id="name" required>
+                                    <label for="name" class="form__label">Ваше Имя и Фамилия</label>
+                                </div>
+
+                                <div class="form__group">
+                                    <input type="email" class="form__input" placeholder="Ваш email" id="email" required>
+                                    <label for="email" class="form__label">Ваш email</label>
+                                </div>
+
+                                <div class="form__group">
+                                    <div class="form__group-radio">
+                                        <input type="radio" class="form__input-radio" id="tour-1" name="cheked">
+                                        <label for="tour-1" class="form__label-radio">
+                                            <span class="form__button-radio"></span>
+                                            Групповой тур</label>
+                                    </div>
+
+                                    <div class="form__group-radio">
+                                        <input type="radio" class="form__input-radio" id="tour-2" name="cheked">
+                                        <label for="tour-2" class="form__label-radio">
+                                            <span class="form__button-radio"></span>
+                                            Индивидуальный тур</label>
+                                    </div>
+                                </div>
+                                <div class="form__group">
+                                    <button class="btn  btn__brown ">Забронировать</button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
+        <footer class="footer">
+            <div class="row text-align-center">
+                <a href="#">
+                    <img src="images/logo.svg" alt="logo" class="footer__logo">
+                </a>
+            </div>
+            <div class="row">
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">о нас</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">скидки</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">лучшие туры</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">калькулятор</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">связаться с нами</a></li>
+                </ul>
+            </div>
+        </footer>
     </div>
 
 
